@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<header class="app-navbar" th:fragment="publicHeader(activeRoute)">
+    <a class="site-logo" th:href="@{/}" data-transition-link>
+        <span class="site-logo__mark">M</span>
+        <span class="site-logo__text" th:text="${appName}">MovieSearch</span>
+    </a>
+
+    <form id="site-search" class="nav-search" th:action="@{/search}" method="get" data-search-form aria-label="Search movies">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Zm9 2-4.35-4.35"></path>
+        </svg>
+        <input type="search" name="query" placeholder="Search titles or genres" th:value="${searchQuery}" data-search-input autocomplete="off">
+        <button class="nav-search__submit" type="submit">Go</button>
+    </form>
+
+    <div class="app-navbar__spacer" aria-hidden="true"></div>
+</header>
+
+<header class="app-navbar" th:fragment="appNavbar(activeRoute)">
+    <a class="site-logo" th:href="@{/}" data-transition-link>
+        <span class="site-logo__mark">M</span>
+        <span class="site-logo__text" th:text="${appName}">MovieSearch</span>
+    </a>
+
+    <form id="site-search" class="nav-search" th:action="@{/search}" method="get" data-search-form aria-label="Search movies">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Zm9 2-4.35-4.35"></path>
+        </svg>
+        <input type="search" name="query" placeholder="Search titles or genres" th:value="${searchQuery}" data-search-input autocomplete="off">
+        <button class="nav-search__submit" type="submit">Go</button>
+    </form>
+
+    <div class="app-navbar__spacer" aria-hidden="true"></div>
+</header>
+
+<footer class="site-footer" th:fragment="siteFooter()">
+    <p th:text="${appName} + ' | Personalized movie discovery'">MovieSearch | Personalized movie discovery</p>
+    <p th:text="'Copyright ' + ${currentYear} + ' ' + ${appName}">Copyright 2026 MovieSearch</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Movie still one">
+  <defs>
+    <linearGradient id="bg-a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101820"/>
+      <stop offset="56%" stop-color="#23251c"/>
+      <stop offset="100%" stop-color="#f2e500"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" rx="36" fill="url(#bg-a)"/>
+  <circle cx="640" cy="92" r="88" fill="#fff7a4" fill-opacity=".2"/>
+  <path d="M84 420c70-106 146-166 228-180 52 30 92 66 114 110-70 34-162 84-278 150-46-16-80-44-64-80z" fill="#0e0f0f" fill-opacity=".76"/>
+  <path d="M344 174l112 86-150 76" fill="none" stroke="#f2e500" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+  <text x="86" y="112" fill="#ffffff" font-family="'Trebuchet MS', sans-serif" font-size="24" letter-spacing="10">SIGNAL RUN</text>
+  <text x="86" y="430" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="56">TRACE THE LIGHT</text>
+</svg>

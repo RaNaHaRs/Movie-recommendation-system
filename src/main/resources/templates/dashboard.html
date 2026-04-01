@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${appName} + ' | Dashboard'">MovieSearch | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+    <script defer th:src="@{/js/site.js}"></script>
+</head>
+<body class="app-page page-dashboard">
+<div class="page-loader" aria-hidden="true"></div>
+<header th:replace="~{fragments/chrome :: appNavbar('home')}"></header>
+
+<main class="dashboard-shell">
+    <section class="welcome-panel glass-panel welcome-panel--compact" data-reveal>
+        <div class="welcome-panel__copy">
+            <span class="eyebrow">Welcome, <span th:text="${viewer != null ? viewer.username : 'viewer'}">viewer</span> &#128075;</span>
+            <h1>Here are your personalized recommendations</h1>
+            <p th:text="${dashboard.heroMovie.tagline}">A thief enters layered dreams to plant an idea.</p>
+
+            <div class="pill-row">
+                <span class="pill" th:text="${dashboard.heroMovie.genre}">Sci-Fi Thriller</span>
+                <span class="pill" th:text="${dashboard.heroMovie.rating}">8.8</span>
+                <span class="pill" th:text="${dashboard.heroMovie.duration}">2h 28m</span>
+            </div>
+        </div>
+
+        <aside class="welcome-panel__signal glass-panel">
+            <span class="eyebrow">Model Feed</span>
+            <strong th:text="${dashboard.heroMovie.title}">Inception</strong>
+            <p th:text="${dashboard.recommendationHeading == 'Search Results' ? 'Closest match loaded from the Python search model.' : 'Username-based recommendations loaded from the Python model.'}">
+                Username-based recommendations loaded from the Python model.
+            </p>
+        </aside>
+    </section>
+
+    <div class="status-banner status-banner--warning glass-panel" data-reveal th:if="${dashboardNotice != null}" th:text="${dashboardNotice}">
+        Movie not found.
+    </div>
+
+    <div class="status-banner status-banner--error glass-panel" data-reveal th:if="${dashboardError != null}" th:text="${dashboardError}">
+        Recommendations are temporarily unavailable.
+    </div>
+
+    <section id="recommendationPanel" class="section-block section-block--list" data-reveal data-search-results-region th:fragment="recommendationPanel">
+        <div class="section-head">
+            <div>
+                <h2 th:text="${dashboard.recommendationHeading}">Recommended For You</h2>
+                <p class="section-copy" th:text="${dashboard.recommendationMessage}">Live recommendations loaded from the Python model.</p>
+            </div>
+        </div>
+
+        <div class="movie-list-shell" th:if="${!#lists.isEmpty(dashboard.recommendedMovies)}">
+            <div class="movie-list">
+                <article class="movie-list-item" th:each="movie, iter : ${dashboard.recommendedMovies}" th:style="'--list-delay:' + (${iter.index} * 75) + 'ms;'">
+                    <div class="movie-list-item__copy">
+                        <h3 th:text="${movie.title}">Inception</h3>
+                        <p class="movie-list-item__meta">
+                            <span th:text="${'Genre: ' + movie.genre + ' | Rating: ' + movie.rating + (#strings.isEmpty(movie.year) ? '' : ' | Year: ' + movie.year)}">Genre: Sci-Fi Thriller | Rating: 8.8 | Year: 2010</span>
+                        </p>
+                    </div>
+                    <a class="movie-card__button" th:href="@{|/movie/${movie.slug}|}" data-transition-link>View Details</a>
+                </article>
+            </div>
+        </div>
+
+        <div class="empty-panel glass-panel" th:if="${#lists.isEmpty(dashboard.recommendedMovies)}" th:text="${dashboard.emptyStateMessage}">
+            No movies found.
+        </div>
+    </section>
+
+    <section class="section-block section-block--list" data-reveal>
+        <div class="section-head">
+            <h2>Trending Movies</h2>
+        </div>
+
+        <div class="movie-list-shell">
+            <div class="movie-list">
+                <article class="movie-list-item" th:each="movie, iter : ${dashboard.trendingMovies}" th:style="'--list-delay:' + (80 + (${iter.index} * 65)) + 'ms;'">
+                    <div class="movie-list-item__copy">
+                        <h3 th:text="${movie.title}">The Matrix</h3>
+                        <p class="movie-list-item__meta" th:text="${'Genre: ' + movie.genre + ' | Rating: ' + movie.rating + (#strings.isEmpty(movie.year) ? '' : ' | Year: ' + movie.year)}">
+                            Genre: Sci-Fi Action | Rating: 8.7 | Year: 1999
+                        </p>
+                    </div>
+                    <a class="movie-card__button" th:href="@{|/movie/${movie.slug}|}" data-transition-link>View Details</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block section-block--list" data-reveal>
+        <div class="section-head">
+            <h2>Top Rated Movies</h2>
+        </div>
+
+        <div class="movie-list-shell">
+            <div class="movie-list">
+                <article class="movie-list-item" th:each="movie, iter : ${dashboard.topRatedMovies}" th:style="'--list-delay:' + (110 + (${iter.index} * 65)) + 'ms;'">
+                    <div class="movie-list-item__copy">
+                        <h3 th:text="${movie.title}">The Dark Knight</h3>
+                        <p class="movie-list-item__meta" th:text="${'Genre: ' + movie.genre + ' | Rating: ' + movie.rating + (#strings.isEmpty(movie.year) ? '' : ' | Year: ' + movie.year)}">
+                            Genre: Action Crime | Rating: 9.0 | Year: 2008
+                        </p>
+                    </div>
+                    <a class="movie-card__button" th:href="@{|/movie/${movie.slug}|}" data-transition-link>View Details</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block section-block--list" data-reveal>
+        <div class="section-head">
+            <h2>Favorites</h2>
+        </div>
+
+        <div class="movie-list-shell" th:if="${!#lists.isEmpty(dashboard.favoriteMovies)}">
+            <div class="movie-list">
+                <article class="movie-list-item" th:each="movie, iter : ${dashboard.favoriteMovies}" th:style="'--list-delay:' + (140 + (${iter.index} * 65)) + 'ms;'">
+                    <div class="movie-list-item__copy">
+                        <h3 th:text="${movie.title}">Parasite</h3>
+                        <p class="movie-list-item__meta" th:text="${'Genre: ' + movie.genre + ' | Rating: ' + movie.rating + (#strings.isEmpty(movie.year) ? '' : ' | Year: ' + movie.year)}">
+                            Genre: Thriller Drama | Rating: 8.5 | Year: 2019
+                        </p>
+                    </div>
+                    <a class="movie-card__button" th:href="@{|/movie/${movie.slug}|}" data-transition-link>View Details</a>
+                </article>
+            </div>
+        </div>
+
+        <div class="empty-panel glass-panel" th:if="${#lists.isEmpty(dashboard.favoriteMovies)}">
+            No favorites saved yet.
+        </div>
+    </section>
+</main>
+
+<footer th:replace="~{fragments/chrome :: siteFooter()}"></footer>
+</body>
+</html>

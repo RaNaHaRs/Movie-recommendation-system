@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" role="img" aria-label="Cinema Club poster">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff7b82"/>
+      <stop offset="54%" stop-color="#37131e"/>
+      <stop offset="100%" stop-color="#0d1017"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="450" rx="24" fill="url(#bg)"/>
+  <circle cx="90" cy="112" r="54" fill="#ffd88f" fill-opacity=".28"/>
+  <rect x="56" y="170" width="188" height="132" rx="20" fill="#0d1320" fill-opacity=".58" stroke="#ffffff" stroke-opacity=".12"/>
+  <path d="M86 204h128M86 236h98M86 268h72" fill="none" stroke="#ffd8b7" stroke-linecap="round" stroke-width="12"/>
+  <path d="M46 352c44-50 91-78 143-82 23 18 45 45 64 82z" fill="#0a1018" fill-opacity=".8"/>
+  <text x="28" y="368" fill="#ffffff" font-family="'Franklin Gothic Medium', sans-serif" font-size="36" font-weight="700">CINEMA</text>
+  <text x="28" y="408" fill="#ffffff" font-family="'Franklin Gothic Medium', sans-serif" font-size="36" font-weight="700">CLUB</text>
+  <text x="28" y="430" fill="#ffd2c8" font-family="'Trebuchet MS', sans-serif" font-size="15" letter-spacing="4">DRAMA</text>
+</svg>

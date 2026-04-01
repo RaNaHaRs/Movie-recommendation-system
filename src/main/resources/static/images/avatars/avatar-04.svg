@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Cast avatar four">
+  <defs>
+    <linearGradient id="avatar-d" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff6a0"/>
+      <stop offset="100%" stop-color="#584f06"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="80" fill="#1b1b1b"/>
+  <circle cx="80" cy="80" r="68" fill="url(#avatar-d)" fill-opacity=".16"/>
+  <circle cx="80" cy="64" r="27" fill="#f0cfaf"/>
+  <path d="M42 134c11-26 28-38 38-38s27 12 38 38" fill="#131313"/>
+  <path d="M44 62c10-24 24-34 44-34 16 0 28 9 36 28-12-4-20-6-26-6-20 0-34 14-54 12z" fill="#1b1b1b"/>
+</svg>

@@ -1,0 +1,254 @@
+[
+  {
+    "slug": "inception",
+    "title": "Inception",
+    "year": 2010,
+    "genre": "Action|Sci-Fi|Thriller",
+    "rating": 8.8,
+    "popularity": 98,
+    "poster": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=600&q=80",
+    "tagline": "Your mind is the scene of the crime.",
+    "overview": "A thief enters layered dreams to plant an idea and triggers a reality-bending mission.",
+    "tags": ["dream", "heist", "mind-bending", "science fiction"],
+    "director": "Christopher Nolan",
+    "duration": "2h 28m",
+    "releaseDate": "2010-07-16",
+    "studio": "Warner Bros.",
+    "cast": [
+      {"actorName": "Leonardo DiCaprio", "characterName": "Cobb", "avatar": ""},
+      {"actorName": "Joseph Gordon-Levitt", "characterName": "Arthur", "avatar": ""}
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "the-matrix",
+    "title": "The Matrix",
+    "year": 1999,
+    "genre": "Action|Sci-Fi",
+    "rating": 8.7,
+    "popularity": 95,
+    "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=600&q=80",
+    "tagline": "Reality is a prison.",
+    "overview": "A hacker learns the world is a simulation and joins a rebellion against its controllers.",
+    "tags": ["simulation", "cyberpunk", "artificial intelligence", "chosen one"],
+    "director": "The Wachowskis",
+    "duration": "2h 16m",
+    "releaseDate": "1999-03-31",
+    "studio": "Warner Bros.",
+    "cast": [
+      {"actorName": "Keanu Reeves", "characterName": "Neo", "avatar": ""},
+      {"actorName": "Carrie-Anne Moss", "characterName": "Trinity", "avatar": ""}
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "interstellar",
+    "title": "Interstellar",
+    "year": 2014,
+    "genre": "Adventure|Drama|Sci-Fi",
+    "rating": 8.6,
+    "popularity": 94,
+    "poster": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=600&q=80",
+    "tagline": "Mankind was born on Earth. It was never meant to die here.",
+    "overview": "Explorers travel through a wormhole in search of a future for humanity.",
+    "tags": ["space", "wormhole", "father daughter", "science fiction"],
+    "director": "Christopher Nolan",
+    "duration": "2h 49m",
+    "releaseDate": "2014-11-07",
+    "studio": "Paramount Pictures",
+    "cast": [
+      {"actorName": "Matthew McConaughey", "characterName": "Cooper", "avatar": ""},
+      {"actorName": "Anne Hathaway", "characterName": "Brand", "avatar": ""}
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "the-dark-knight",
+    "title": "The Dark Knight",
+    "year": 2008,
+    "genre": "Action|Crime|Drama",
+    "rating": 9.0,
+    "popularity": 99,
+    "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=600&q=80",
+    "tagline": "Why so serious?",
+    "overview": "Batman faces the Joker as Gotham descends into chaos and moral conflict.",
+    "tags": ["batman", "superhero", "crime", "gotham"],
+    "director": "Christopher Nolan",
+    "duration": "2h 32m",
+    "releaseDate": "2008-07-18",
+    "studio": "Warner Bros.",
+    "cast": [
+      {"actorName": "Christian Bale", "characterName": "Bruce Wayne", "avatar": ""},
+      {"actorName": "Heath Ledger", "characterName": "Joker", "avatar": ""}
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "batman-begins",
+    "title": "Batman Begins",
+    "year": 2005,
+    "genre": "Action|Crime|Drama",
+    "rating": 8.2,
+    "popularity": 88,
+    "poster": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=600&q=80",
+    "tagline": "Evil fears the knight.",
+    "overview": "Bruce Wayne returns to Gotham and becomes Batman to fight organized crime and fear itself.",
+    "tags": ["batman", "origin", "superhero", "gotham"],
+    "director": "Christopher Nolan",
+    "duration": "2h 20m",
+    "releaseDate": "2005-06-15",
+    "studio": "Warner Bros.",
+    "cast": [
+      {"actorName": "Christian Bale", "characterName": "Bruce Wayne", "avatar": ""},
+      {"actorName": "Michael Caine", "characterName": "Alfred", "avatar": ""}
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "toy-story",
+    "title": "Toy Story",
+    "year": 1995,
+    "genre": "Adventure|Animation|Comedy",
+    "rating": 8.3,
+    "popularity": 86,
+    "poster": "https://images.unsplash.com/photo-1513106580091-1d82408b8cd6?auto=format&fit=crop&w=600&q=80",
+    "tagline": "The adventure takes off.",
+    "overview": "A group of toys comes alive whenever humans are not around.",
+    "tags": ["toys", "friendship", "pixar", "family"],
+    "director": "John Lasseter",
+    "duration": "1h 21m",
+    "releaseDate": "1995-11-22",
+    "studio": "Pixar",
+    "cast": [
+      {"actorName": "Tom Hanks", "characterName": "Woody", "avatar": ""},
+      {"actorName": "Tim Allen", "characterName": "Buzz Lightyear", "avatar": ""}
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "toy-story-2",
+    "title": "Toy Story 2",
+    "year": 1999,
+    "genre": "Adventure|Animation|Comedy",
+    "rating": 7.9,
+    "popularity": 84,
+    "poster": "https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=600&q=80",
+    "tagline": "The toys are back.",
+    "overview": "Woody is stolen by a toy collector and Buzz leads a rescue mission.",
+    "tags": ["toys", "friendship", "rescue", "family"],
+    "director": "John Lasseter",
+    "duration": "1h 32m",
+    "releaseDate": "1999-11-24",
+    "studio": "Pixar",
+    "cast": [
+      {"actorName": "Tom Hanks", "characterName": "Woody", "avatar": ""},
+      {"actorName": "Tim Allen", "characterName": "Buzz Lightyear", "avatar": ""}
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "mad-max-fury-road",
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "genre": "Action|Adventure|Sci-Fi",
+    "rating": 8.1,
+    "popularity": 90,
+    "poster": "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?auto=format&fit=crop&w=600&q=80",
+    "tagline": "What a lovely day.",
+    "overview": "Max joins Furiosa on a relentless desert escape from a tyrant.",
+    "tags": ["post-apocalyptic", "desert", "chase", "action"],
+    "director": "George Miller",
+    "duration": "2h 0m",
+    "releaseDate": "2015-05-15",
+    "studio": "Warner Bros.",
+    "cast": [
+      {"actorName": "Tom Hardy", "characterName": "Max", "avatar": ""},
+      {"actorName": "Charlize Theron", "characterName": "Furiosa", "avatar": ""}
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "spider-man-into-the-spider-verse",
+    "title": "Spider-Man: Into the Spider-Verse",
+    "year": 2018,
+    "genre": "Action|Adventure|Animation",
+    "rating": 8.4,
+    "popularity": 89,
+    "poster": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=600&q=80",
+    "tagline": "More than one wears the mask.",
+    "overview": "Miles Morales becomes Spider-Man and meets heroes from parallel universes.",
+    "tags": ["superhero", "multiverse", "animation", "spider-man"],
+    "director": "Bob Persichetti",
+    "duration": "1h 57m",
+    "releaseDate": "2018-12-14",
+    "studio": "Sony Pictures Animation",
+    "cast": [
+      {"actorName": "Shameik Moore", "characterName": "Miles Morales", "avatar": ""},
+      {"actorName": "Jake Johnson", "characterName": "Peter B. Parker", "avatar": ""}
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "parasite",
+    "title": "Parasite",
+    "year": 2019,
+    "genre": "Comedy|Drama|Thriller",
+    "rating": 8.5,
+    "popularity": 87,
+    "poster": "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=600&q=80",
+    "tagline": "Act like you own the place.",
+    "overview": "A poor family infiltrates a wealthy household with escalating consequences.",
+    "tags": ["class conflict", "thriller", "dark comedy", "family"],
+    "director": "Bong Joon Ho",
+    "duration": "2h 12m",
+    "releaseDate": "2019-11-08",
+    "studio": "CJ Entertainment",
+    "cast": [
+      {"actorName": "Song Kang-ho", "characterName": "Kim Ki-taek", "avatar": ""},
+      {"actorName": "Choi Woo-shik", "characterName": "Kim Ki-woo", "avatar": ""}
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "the-godfather",
+    "title": "The Godfather",
+    "year": 1972,
+    "genre": "Crime|Drama",
+    "rating": 9.2,
+    "popularity": 93,
+    "poster": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80",
+    "tagline": "An offer you cannot refuse.",
+    "overview": "The Corleone family balances power, loyalty, and succession inside organized crime.",
+    "tags": ["mafia", "crime family", "classic", "drama"],
+    "director": "Francis Ford Coppola",
+    "duration": "2h 55m",
+    "releaseDate": "1972-03-24",
+    "studio": "Paramount Pictures",
+    "cast": [
+      {"actorName": "Marlon Brando", "characterName": "Vito Corleone", "avatar": ""},
+      {"actorName": "Al Pacino", "characterName": "Michael Corleone", "avatar": ""}
+    ],
+    "gallery": []
+  },
+  {
+    "slug": "avengers-endgame",
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "genre": "Action|Adventure|Sci-Fi",
+    "rating": 8.4,
+    "popularity": 97,
+    "poster": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=600&q=80",
+    "tagline": "Part of the journey is the end.",
+    "overview": "The Avengers assemble for one last mission after a universe-shattering defeat.",
+    "tags": ["superhero", "marvel", "time travel", "team-up"],
+    "director": "Anthony Russo",
+    "duration": "3h 1m",
+    "releaseDate": "2019-04-26",
+    "studio": "Marvel Studios",
+    "cast": [
+      {"actorName": "Robert Downey Jr.", "characterName": "Tony Stark", "avatar": ""},
+      {"actorName": "Chris Evans", "characterName": "Steve Rogers", "avatar": ""}
+    ],
+    "gallery": []
+  }
+]

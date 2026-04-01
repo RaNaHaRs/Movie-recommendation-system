@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Movie still four">
+  <defs>
+    <linearGradient id="bg-d" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070707"/>
+      <stop offset="54%" stop-color="#181818"/>
+      <stop offset="100%" stop-color="#6d6608"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" rx="36" fill="url(#bg-d)"/>
+  <path d="M0 370c130-74 260-110 390-108 132 4 268 40 410 112v146H0z" fill="#0f0f0f"/>
+  <path d="M162 392l124-158 98 84 126-150 128 224" fill="none" stroke="#f2e500" stroke-linecap="round" stroke-linejoin="round" stroke-width="18"/>
+  <circle cx="608" cy="128" r="64" fill="#fff9bb" fill-opacity=".14"/>
+  <path d="M122 112h120M122 156h186M122 200h160" stroke="#ffffff" stroke-opacity=".48" stroke-width="10" stroke-linecap="round"/>
+  <text x="122" y="430" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="50">ENDGAME NODE</text>
+</svg>
